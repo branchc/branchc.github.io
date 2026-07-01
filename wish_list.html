@@ -1,30 +1,123 @@
-<html>
+<!doctype html>
+<html lang="en">
     <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Wish List</title>
+        <style>
+            /* Small thumbnail style used for images in the table */
+            table { border-collapse: collapse; width: 100%; }
+            th, td { padding: 8px 10px; border: 1px solid #ddd; vertical-align: middle; }
+            th { background: #f7f7f7; text-align: left; }
+            .thumb { max-width: 120px; height: auto; display: block; }
+            .thumb-cell { width: 140px; text-align: center; }
+        </style>
     </head>
     <body>
         <h1>Wish List</h1>
-    
+
+        <!-- Single consolidated table with an Image column. To add an image for a row, place the file in the `media/` folder and use a relative URL. -->
         <table>
-            <tr>
-                <th>Company</th>
-                <th></th>
-                <th>Why</th>
-            </tr>
-            <tr>
-                <td><a href= "theop.games">usaopoly</a></td>
-                <td></td>
-                <td><a href = "https://www.wsj.com/opinion/tim-walz-takes-joy-in-tesla-stock-drop-musk-resentment-politics-726fd8f1">WSJ Article</a></td>
-            </tr>
-            <tr>
-                <td><a href = "http://www.mcdonalds.com">McDonalds</a></td>
-                <td></td>
-                <td>Trump electiion stunt</td>
-            </tr>
-            <tr>
-                <td><a href = "http://www.mcdonalds.com">McDonalds</a></td>
-                <td></td>
-                <td>Trump electiion stunt</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Item</th>
+                    <th>Notes</th>
+                    <th>Where / Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="thumb-cell"><!-- no image for this row -->
+                         <a href="media/O-shirt-natural.webp" target="_blank" rel="noopener">
+                            <img class="thumb" src="media/O-shirt-natural.webp" alt="O Shirt " />
+                        </a>
+                    </td>
+                    <td><a href="https://yinzylvania.com/products/original-hot-dog-shop-pittsburgh?variant=44836788928731">The O T-Shirt</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                            <td class="thumb-cell">
+                                <!-- Image file was renamed to a safer filename; keep images in the media/ folder -->
+                                <a href="media/synology-ds223j.png" target="_blank" rel="noopener">
+                                    <img class="thumb" src="media/synology-ds223j.png" alt="Synology DiskStation screenshot" />
+                                </a>
+                            </td>
+                    <td><a href="https://www.synology.com/en-global/products/DS223j#specs">Synology DiskStation DS223j 2-Bay NAS Enclosure</a></td>
+                    <td>Can buy here</td>
+                    <td><a href="https://www.bhphotovideo.com/c/search?Ntt=Synology%20Ds223j">B&H Photo Video</a></td>
+                </tr>
+
+                <tr>
+                    <td class="thumb-cell">
+                        <a href="media/LLBean_backpack.jpg" target="_blank" rel="noopener">
+                            <img class="thumb" src="media/LLBean_backpack.jpg" alt="LL Bean Backpack" />
+                        </a>
+                    </td>
+                    <td><a href="https://www.llbean.com/llb/shop/127997?page=rugged-carry-on-travel-pack&bc=50-516673&feat=516673-GN0&csp=f&attrValue_0=165&pos=12">LL Bean Backpack</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td class="thumb-cell">
+                        <a href="media/Attic-T-stirt.webp" target="_blank" rel="noopener">
+                            <img class="thumb" src="media/Attic-T-stirt.webp" alt="Attic-T-shirt Shirt " />
+                        </a>
+                    </td>
+                    <td><a href="https://yinzylvania.com/products/the-attic-nightclub-pittsburgh?variant=45650720620763">Attic T-Shirt</a></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td class="thumb-cell">
+                        <a href="media/Grosse-Pointe-Blank-blue-ray.jpg" target="_blank" rel="noopener">
+                            <img class="thumb" src="media/Grosse-Pointe-Blank-blue-ray.jpg" alt="Grosse Pointe Blank Blu-Ray " />
+                        </a>
+                    </td>
+                    <td>Grosse Pointe Blank Blu-Ray</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="thumb-cell">
+                        <a href="media/Sonos-Ray-Soundbar.avif" target="_blank" rel="noopener">
+                            <img class="thumb" src="media/Sonos-Ray-Soundbar.avif" alt="Sonos Ray Soundbar" />
+                        </a>
+                    </td>
+                    <td><a href="https://www.sonos.com/en-us/shop/ray">Sonos Ray Soundbar</a></td>
+
+                    <td></td>
+                    <td><a href="https://www.bestbuy.com/product/sonos-ray-all-in-one-soundbar-for-tv-and-music-black/J39H373Y64/sku/6506474">Best Buy</a></td>
+
+                </tr>
+                <tr>
+                    <td class="thumb-cell">
+                        <a href="media/Faraday-bag.webp" target="_blank" rel="noopener">
+                            <img class="thumb" src="media/Faraday-bag.webp" alt="Faraday Bag" />
+                        </a>
+                    </td>
+                    <td>Mission Darkness™ Window Faraday Bag for Phones
+                    </td>
+                    <td></td>
+                    <td><a href="https://mosequipment.com/products/mission-darkness-window-faraday-bag-for-phones?variant=10642588229">Company Website</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="thumb-cell">
+                        <a href="media/ZBDongle-E-1.webp" target="_blank" rel="noopener">
+                            <img class="thumb" src="media/ZBDongle-E-1.webp" alt="ZBDongle-E-1" />
+                        </a>
+                    </td>
+                    <td>Sonoff Zigbee 3.0 USB Dongle Plus (ZBDongle-P)
+                    </td>
+                    <td></td>
+                    <td><a href="https://sonoff.tech/en-us/products/sonoff-zigbee-3-0-usb-dongle-plus-zbdongle-p?srsltid=AfmBOopcHchOAqTGgKsqh40VAqMMnLGZSMPYTeMY_UGCOuW84XMyC8x8">Company Website</a>
+                    </td>
+                </tr>
+            </tbody>
         </table>
     </body>
 </html>
